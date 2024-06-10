@@ -1,3 +1,8 @@
+" Enable lsp for zsh.
+let g:coc_filetype_map = {
+  \ 'zsh': 'sh',
+  \ }
+
 " Use tab/s-tab to navigate forward/backward completion items.
 inoremap <silent><expr> <TAB>
 \ coc#pum#visible() ? coc#pum#next(1) :

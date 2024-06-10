@@ -53,9 +53,24 @@ Plug 'vim-scripts/restore_view.vim'
 " Write plugin infomation above.
 call plug#end()
 
-source $HOME/.vim/sources/plug-specific/papercolor.vim
-source $HOME/.vim/sources/plug-specific/coc.vim
-source $HOME/.vim/sources/plug-specific/nnn.vim
-source $HOME/.vim/sources/plug-specific/fzf.vim
-source $HOME/.vim/sources/plug-specific/asyncrun.vim
-source $HOME/.vim/sources/plug-specific/restore_view.vim
+if ! empty(globpath(&rtp, 'sources/plug-specific/papercolor.vim'))
+    source $HOME/.vim/sources/plug-specific/papercolor.vim
+endif
+if ! empty(globpath(&rtp, 'sources/plug-specific/coc.vim'))
+    source $HOME/.vim/sources/plug-specific/coc.vim
+endif
+if ! empty(globpath(&rtp, 'sources/plug-specific/nnn.vim'))
+    source $HOME/.vim/sources/plug-specific/nnn.vim
+endif
+if ! empty(globpath(&rtp, 'sources/plug-specific/fzf.vim'))
+    source $HOME/.vim/sources/plug-specific/fzf.vim
+endif
+if ! empty(globpath(&rtp, 'sources/plug-specific/asyncrun.vim'))
+    source $HOME/.vim/sources/plug-specific/asyncrun.vim
+endif
+if ! empty(globpath(&rtp, 'sources/plug-specific/restore_view.vim'))
+    source $HOME/.vim/sources/plug-specific/restore_view.vim
+endif
+if ! empty(globpath(&rtp, 'sources/plug-specific/signify.vim'))
+    source $HOME/.vim/sources/plug-specific/signify.vim
+endif
