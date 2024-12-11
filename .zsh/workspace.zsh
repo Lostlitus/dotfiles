@@ -1,5 +1,5 @@
 # Enable tmux-256color.
-# Before macOS 14, tmux-246color is not shipped, so we need to build it from
+# Before macOS 14, tmux-256color is not shipped, so we need to build it from
 # source.  Check details in
 # https://gpanders.com/blog/the-definitive-guide-to-using-tmux-256color-on-macos
 # export TERMINFO_DIRS=$TERMINFO_DIRS:$HOME/.local/share/terminfo

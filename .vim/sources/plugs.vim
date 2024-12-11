@@ -53,24 +53,24 @@ Plug 'vim-scripts/restore_view.vim'
 " Write plugin infomation above.
 call plug#end()
 
-if ! empty(globpath(&rtp, 'sources/plug-specific/papercolor.vim'))
+if isdirectory(globpath(&rtp, 'plugged/papercolor-theme'))
     source $HOME/.vim/sources/plug-specific/papercolor.vim
 endif
-if ! empty(globpath(&rtp, 'sources/plug-specific/coc.vim'))
+if isdirectory(globpath(&rtp, 'plugged/coc.nvim'))
     source $HOME/.vim/sources/plug-specific/coc.vim
 endif
-if ! empty(globpath(&rtp, 'sources/plug-specific/nnn.vim'))
+if isdirectory(globpath(&rtp, 'plugged/nnn.vim'))
     source $HOME/.vim/sources/plug-specific/nnn.vim
 endif
-if ! empty(globpath(&rtp, 'sources/plug-specific/fzf.vim'))
+if isdirectory(globpath(&rtp, 'plugged/fzf.vim'))
     source $HOME/.vim/sources/plug-specific/fzf.vim
 endif
-if ! empty(globpath(&rtp, 'sources/plug-specific/asyncrun.vim'))
+if isdirectory(globpath(&rtp, 'plugged/asyncrun.vim'))
     source $HOME/.vim/sources/plug-specific/asyncrun.vim
 endif
-if ! empty(globpath(&rtp, 'sources/plug-specific/restore_view.vim'))
+if isdirectory(globpath(&rtp, 'plugged/restore_view.vim'))
     source $HOME/.vim/sources/plug-specific/restore_view.vim
 endif
-if ! empty(globpath(&rtp, 'sources/plug-specific/signify.vim'))
+if isdirectory(globpath(&rtp, 'plugged/vim-signify.vim'))
     source $HOME/.vim/sources/plug-specific/signify.vim
 endif

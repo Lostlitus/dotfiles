@@ -1,6 +1,6 @@
 # Autoupdate is annoying
 export HOMEBREW_NO_AUTO_UPDATE=1
-export TLDR_AUTO_UPDATE_DISABLE=1
+export TLDR_AUTO_UPDATE_DISABLED=1
 
 # Enable gpg authentication.
 export GPG_TTY=$(tty)
