@@ -58,10 +58,15 @@ set backspace=indent,eol,start
 " Active auto indent in insert mode.
 set autoindent
 
-" Default tab width is 4. But not expand tab(i.e. set expandtab), because some
-" file needs an acutal tab to work correctly. For example, makefile.
+" Default tab width is 4.
 set tabstop=4
 set shiftwidth=4
+
+" On pressing tab, insert spaces instead.(The spaces number equals to
+" the value of shiftwidth) Some files need an acutal tab to work correctly,
+" (For example, makefile) but global ftplugin file is enough to handle them.
+" (For makefile, global make.vim manually disable expandtab)
+set expandtab
 
 " Enable searching as you type, rather than waiting till you press enter.
 set incsearch
@@ -99,16 +104,9 @@ set noswapfile
 set nobackup
 set nowritebackup
 
-" Sets format indent.
-" Show existing tab with 4 spaces width.
-set tabstop=4
 " Highlight tabs.
 highlight Tab ctermbg=red
 match Tab "\t"
-" When indenting with '>', use 4 spaces width.
-set shiftwidth=4
-" On pressing tab, insert spaces instead.(The spaces number equals to
-" the value of shiftwidth.
-set expandtab
+
 " Aligns switch and its case labels in the same column.
 set cinoptions+=:0

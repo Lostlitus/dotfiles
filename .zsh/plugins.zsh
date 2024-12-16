@@ -1,6 +1,4 @@
-# Zsh plugins.
-
-# Zsh-histdb. (better history management than zsh's)
+# Zsh-histdb. (better history management than builtin one)
 if [ -f $HOME/Developer/local/src/zsh-histdb/histdb-interactive.zsh ] &&
    [ -f $HOME/Developer/local/src/zsh-histdb/sqlite-history.zsh ]
 then
