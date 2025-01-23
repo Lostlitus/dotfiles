@@ -18,9 +18,6 @@
     // GO
     // Share gopls with other processes like vim-go.
     "go.goplsArgs": ["-remote=auto"],
-    "go.goplsPath": "/opt/homebrew/bin/gopls",
-
-    // Ruby
-    "solargraph.commandPath": "/opt/homebrew/lib/ruby/gems/3.3.0/bin/solargraph"
+    "go.goplsPath": "/opt/homebrew/bin/gopls"
 }
 
