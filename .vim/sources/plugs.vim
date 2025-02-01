@@ -3,7 +3,6 @@ call plug#begin()
 
 " Vim theme. And plugins for additional syntax highlighting.
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'NLKNguyen/c-syntax.vim'
 
 " Formatted tabline.
 Plug 'mkitt/tabline.vim'

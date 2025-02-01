@@ -5,8 +5,8 @@
     "suggest.noselect": true,
     // Disable annoying inlay hint.
     "inlayHint.enable": false,
-    // Enable syntax highlightint by enable semantic tokens.
-    //"semanticTokens.enable": true,
+    // Enable syntax highlighting by enable semantic tokens.
+    "semanticTokens.enable": true,
 
 
     // Language specific settings
