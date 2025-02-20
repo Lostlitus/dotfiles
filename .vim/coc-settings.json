@@ -18,6 +18,10 @@
     // GO
     // Share gopls with other processes like vim-go.
     "go.goplsArgs": ["-remote=auto"],
-    "go.goplsPath": "/opt/homebrew/bin/gopls"
+    "go.goplsPath": "/opt/homebrew/bin/gopls",
+
+    // Rust
+    // Disable pop up notification windows.
+    "rust-analyzer.disableProgressNotifications": true
 }
 

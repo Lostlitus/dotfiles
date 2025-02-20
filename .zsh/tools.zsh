@@ -1,3 +1,6 @@
+# Add personal completion path.
+FPATH="$HOME/.zsh/functions:${FPATH}"
+
 # Autoupdate is annoying
 export HOMEBREW_NO_AUTO_UPDATE=1
 export TLDR_AUTO_UPDATE_DISABLED=1
@@ -42,3 +45,13 @@ n ()
         rm -f "$NNN_TMPFILE" > /dev/null
     }
 }
+
+# Rustup does not like homebrew. Well, ok.
+if type rustup &>/dev/null
+then
+    . "$HOME/.cargo/env"
+    # Enable completion.
+    mkdir -p $HOME/.zsh/functions
+    rustup completions zsh > $HOME/.zsh/functions/_rustup.zsh
+    rustup completions zsh cargo > $HOME/.zsh/functions/_cargo.zsh
+fi
