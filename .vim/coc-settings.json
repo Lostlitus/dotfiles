@@ -1,27 +1,26 @@
 {
     // General settings
-
     // Do not select the first item.
     "suggest.noselect": true,
     // Disable annoying inlay hint.
     "inlayHint.enable": false,
     // Enable syntax highlighting by enable semantic tokens.
     "semanticTokens.enable": true,
-
-
+    // OK for company I'd add this.
+    "coc.preferences.formatOnSave": true,
     // Language specific settings
-
     // C/C++
     // Disable auto import headers
-    "clangd.arguments": ["--header-insertion=never"],
-
+    "clangd.arguments": [
+        "--header-insertion=never"
+    ],
     // GO
     // Share gopls with other processes like vim-go.
-    "go.goplsArgs": ["-remote=auto"],
+    "go.goplsArgs": [
+        "-remote=auto"
+    ],
     "go.goplsPath": "/opt/homebrew/bin/gopls",
-
     // Rust
     // Disable pop up notification windows.
     "rust-analyzer.disableProgressNotifications": true
 }
-

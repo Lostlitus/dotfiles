@@ -6,9 +6,13 @@
 " from it as well.
 autocmd ColorScheme * highlight CocSemTypeClass cterm=bold ctermfg=135 gui=bold guifg=#af5fff
 autocmd ColorScheme * highlight CocSemTypeStruct cterm=bold ctermfg=135 gui=bold guifg=#af5fff
+autocmd ColorScheme * highlight CocSemTypeEnum cterm=bold ctermfg=135 gui=bold guifg=#af5fff
+autocmd ColorScheme * highlight CocSemTypeTypeAlias cterm=bold ctermfg=135 gui=bold guifg=#af5fff
 autocmd ColorScheme * highlight CocSemTypeProperty cterm=none ctermfg=220 gui=bold guifg=#ffdf00
 autocmd ColorScheme * highlight Identifier cterm=None gui=None ctermfg=173 guifg=#40ffff
 autocmd ColorScheme * highlight link CocSemTypeTypeParameter Type
+autocmd ColorScheme * highlight link CocSemTypeBuiltinType Type
+autocmd ColorScheme * highlight Function cterm=None gui=None ctermfg=37 guifg=#00afaf
 
 " Language specific highlighting
 " Rust

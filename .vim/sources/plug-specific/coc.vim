@@ -23,19 +23,31 @@ nmap <silent> <leader>] <Plug>(coc-diagnostic-next)
 
 " Code definition/references navigation.
 nmap <silent> <leader>d <Plug>(coc-definition)
-nmap <silent> <leader>t <Plug>(coc-type-definition)
-nmap <silent> <leader>i <Plug>(coc-implementation)
 nmap <silent> <leader>r <Plug>(coc-references)
 
 " Show documentation in preview window.
 nnoremap <silent> <leader>D :call ShowDocumentation()<CR>
 
-" Show call hierarchy and type hierarchy.
+" Toggle call hierarchy. I use incoming calls only.
 nnoremap <silent> <leader>i :call CocAction('showIncomingCalls')<CR>
-nnoremap <silent> <leader>o :call CocAction('showOutgoingCalls')<CR>
-nnoremap <silent> <leader>p :call CocAction('showSuperTypes')<CR>
-nnoremap <silent> <leader>s :call CocAction('showSubTypes')<CR>
-"nmap <leader>q <Plug>(coc-config-tree-key-close)
+nnoremap <silent> <leader>I :call CloseCalls()<CR>
+function! CloseCalls() abort
+  let winid = coc#window#find('cocViewId', 'calls')
+  if winid != -1
+      call coc#window#close(winid)
+  endif
+endfunction
+
+" Bug here, Closing outline only hide it. It would reopen after switching back.
+" Toggle outline.
+" nnoremap <silent> <leader>o :call CocAction('showOutline')<CR>
+" nnoremap <silent> <leader>O :call CloseOutline()<CR>
+" function! CloseOutline() abort
+"   let winid = coc#window#find('cocViewId', 'OUTLINE')
+"   if winid != -1
+"       call coc#window#close(winid)
+"   endif
+" endfunction
 
 " Remap <C-f> and <C-b> to scroll float windows/popups.
 if has('nvim-0.4.0') || has('patch-8.2.0750')
