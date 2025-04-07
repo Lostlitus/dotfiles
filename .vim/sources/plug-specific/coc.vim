@@ -32,7 +32,7 @@ nnoremap <silent> <leader>D :call ShowDocumentation()<CR>
 nnoremap <silent> <leader>i :call CocAction('showIncomingCalls')<CR>
 nnoremap <silent> <leader>I :call CloseCalls()<CR>
 function! CloseCalls() abort
-  let winid = coc#window#find('cocViewId', 'calls')
+  let winid = coc#window#find('cocViewId', 'CALLS')
   if winid != -1
       call coc#window#close(winid)
   endif

@@ -27,6 +27,10 @@ nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
 " Toggle paste mode when inserting.
 nnoremap <leader>v :set invpaste<CR>
 
+" Move tabs.
+nnoremap <silent><leader>< :tabmove -1<CR>
+nnoremap <silent><leader>> :tabmove +1<CR>
+
 " Synchronize clipboard
 " 1. For ssh connection.(use x11 forwarding)
 " nnoremap <silent><leader>y :call system('xclip -r', @0)<CR>
