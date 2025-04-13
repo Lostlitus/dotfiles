@@ -88,9 +88,6 @@ set timeout timeoutlen=3000 ttimeoutlen=100
 " sometimes be convenient.
 set mouse+=a
 
-" Synchronize the clipboard between vim and system.
-"set clipboard^=unnamed
-
 " Turn on syntax highlighting.
 syntax on
 

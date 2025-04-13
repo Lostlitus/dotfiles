@@ -23,14 +23,15 @@ nmap <silent> <leader>] <Plug>(coc-diagnostic-next)
 
 " Code definition/references navigation.
 nmap <silent> <leader>d <Plug>(coc-definition)
+nmap <silent> <leader>i <Plug>(coc-implementation)
 nmap <silent> <leader>r <Plug>(coc-references)
 
 " Show documentation in preview window.
 nnoremap <silent> <leader>D :call ShowDocumentation()<CR>
 
 " Toggle call hierarchy. I use incoming calls only.
-nnoremap <silent> <leader>i :call CocAction('showIncomingCalls')<CR>
-nnoremap <silent> <leader>I :call CloseCalls()<CR>
+nnoremap <silent> <leader>h :call CocAction('showIncomingCalls')<CR>
+nnoremap <silent> <leader>H :call CloseCalls()<CR>
 function! CloseCalls() abort
   let winid = coc#window#find('cocViewId', 'CALLS')
   if winid != -1

@@ -1,7 +1,7 @@
 " Vim plugin manager Plug configuration.
 call plug#begin()
 
-" Vim theme. And plugins for additional syntax highlighting.
+" Vim theme.
 Plug 'NLKNguyen/papercolor-theme'
 
 " Formatted tabline.
@@ -19,8 +19,11 @@ Plug 'tpope/vim-commentary'
 " Better vim pasta.
 Plug 'sickill/vim-pasta'
 
-" Support for surroundings"
+" Support for surroundings.
 Plug 'tpope/vim-surround'
+
+" Text exchanger.
+Plug 'tommcdo/vim-exchange'
 
 " nnn in vim.
 Plug 'mcchrish/nnn.vim'
@@ -28,10 +31,6 @@ Plug 'mcchrish/nnn.vim'
 " fzf in vim.
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-
-" Compiles and run asynchronously.
-Plug 'skywind3000/asynctasks.vim'
-Plug 'skywind3000/asyncrun.vim'
 
 " VCS differences indicator.
 if has('nvim') || has('patch-8.0.902')
@@ -63,9 +62,6 @@ if isdirectory(globpath(&rtp, 'plugged/nnn.vim'))
 endif
 if isdirectory(globpath(&rtp, 'plugged/fzf.vim'))
     source $HOME/.vim/sources/plug-specific/fzf.vim
-endif
-if isdirectory(globpath(&rtp, 'plugged/asyncrun.vim'))
-    source $HOME/.vim/sources/plug-specific/asyncrun.vim
 endif
 if isdirectory(globpath(&rtp, 'plugged/restore_view.vim'))
     source $HOME/.vim/sources/plug-specific/restore_view.vim
