@@ -25,6 +25,6 @@ nnoremap <silent><leader>y :call system('pbcopy', trim(@0))<CR>
 " Code snippets
 "
 " Markdown inline code
-ia mdc;; ``
+" ia mdc;; ``
 " Markdown code block
-ia mdb;; ``````<ESC>k
+" ia mdb;; ``````<ESC>k

@@ -24,7 +24,7 @@ nmap <silent> <leader>] <Plug>(coc-diagnostic-next)
 " Code definition/references navigation.
 nmap <silent> <leader>d <Plug>(coc-definition)
 nmap <silent> <leader>i <Plug>(coc-implementation)
-nmap <silent> <leader>r <Plug>(coc-references)
+nmap <silent> <leader>u <Plug>(coc-references)
 
 " Show documentation in preview window.
 nnoremap <silent> <leader>D :call ShowDocumentation()<CR>

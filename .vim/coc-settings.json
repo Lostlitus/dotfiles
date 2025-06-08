@@ -22,5 +22,6 @@
     "go.goplsPath": "/opt/homebrew/bin/gopls",
     // Rust
     // Disable pop up notification windows.
-    "rust-analyzer.disableProgressNotifications": true
+    "rust-analyzer.disableProgressNotifications": true,
+    "svelte.enable-ts-plugin": false
 }
